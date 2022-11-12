@@ -1,0 +1,9 @@
+0001 A                  	ORG	$8000	*****HELP*****
+0002 A                  HELP
+0003 A 8000             	BRCLR 	$07,#$80	T2
+0004 A 8000 13078009          	BRSET	$00,Y,#$80	HELP 
+0005 A 8004 18 1E0080FC          T2
+0006 A 8009             	BSET	$AB,X,#$50
+0007 A 8009 1CAB50          	BCLR	$FF,#$FD 	*comentario
+0008 A                  ERROR 010	NO SE ENCUENTRA END
+0009 A 

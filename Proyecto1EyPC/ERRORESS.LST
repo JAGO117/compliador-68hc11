@@ -1,0 +1,171 @@
+0001 A                  ***************
+0002 A                  *VAMO A TRONAR EL COMPILADOR 
+0003 A                  ***************
+0004 A                  	ORG $8000
+0005 A                  	LDAA PACNT	*ERROR 01
+0006 A                  ERROR 001	CONSTANTE INEXISTENTE
+0007 A                  	STAA SEG	*ERROR 02
+0008 A                  ERROR 001	CONSTANTE INEXISTENTE
+0009 A                  	BEQ CICLO	*ERROR 03
+0010 A                  ERROR 003	ETIQUETA INEXISTENTE
+0011 A 8000 27           	PEDRO #$FF	*ERROR 04
+0012 A                  ERROR 004	MNEMONICO INEXISTENTE
+0013 A                  	JMP		*ERROR 05
+0014 A                  ERROR 001	CONSTANTE INEXISTENTE
+0015 A                  	INY $25		*ERROR 06
+0016 A                  ERROR 006	INSTRUCCION NO LLEVA OPERANDOS
+0017 A                  	LDY $253C	*ERROR 07
+0018 A 8002 18 FE253C          LDAA $25 *ERROR 09
+0019 A                  ERROR 009	INSTRUCCION CARECE DE AL MENOS UN ESPACIO RELATIVO AL MARGEN
+0020 A                  	*****AQUI VOY A PONER EL ERROR 08 PORQUE ES EL DE LOS SALTOS Y TENGO QUE PONER MUCHAS INSTRUCCIONES***
+0021 A                  	BNE 	LOP
+0022 A                  ERROR 008	SALTO RELATIVO MUY LEJANO
+0023 A 8006 26           	NOP
+0024 A 8008 01           	NOP
+0025 A 8009 01           	NOP
+0026 A 800A 01           	NOP
+0027 A 800B 01           	NOP
+0028 A 800C 01           	NOP
+0029 A 800D 01           	NOP
+0030 A 800E 01           	NOP
+0031 A 800F 01           	NOP
+0032 A 8010 01           	NOP
+0033 A 8011 01           	
+0034 A 8012 01           	NOP
+0035 A 8013 01           	NOP
+0036 A 8014 01           	NOP
+0037 A 8015 01           	NOP
+0038 A 8016 01           	NOP
+0039 A 8017 01           	NOP
+0040 A 8018 01           	NOP
+0041 A 8019 01           	NOP
+0042 A 801A 01           	NOP
+0043 A 801B 01           	NOP
+0044 A                  
+0045 A 801C 01           	NOP
+0046 A 801D 01           	NOP
+0047 A 801E 01           	NOP
+0048 A 801F 01           	NOP
+0049 A 8020 01           	NOP
+0050 A 8021 01           	NOP
+0051 A 8022 01           	NOP
+0052 A 8023 01           	NOP
+0053 A 8024 01           	NOP
+0054 A 8025 01           	NOP
+0055 A                  
+0056 A 8026 01           	NOP
+0057 A 8027 01           	NOP
+0058 A 8028 01           	NOP
+0059 A 8029 01           	NOP
+0060 A 802A 01           	NOP
+0061 A 802B 01           	NOP
+0062 A 802C 01           	NOP
+0063 A 802D 01           	NOP
+0064 A 802E 01           	NOP
+0065 A 802F 01           	NOP
+0066 A                  
+0067 A 8030 01           	NOP
+0068 A 8031 01           	NOP
+0069 A 8032 01           	NOP
+0070 A 8033 01           	NOP
+0071 A 8034 01           	NOP
+0072 A 8035 01           	NOP
+0073 A 8036 01           	NOP
+0074 A 8037 01           	NOP
+0075 A 8038 01           	NOP
+0076 A 8039 01           	NOP
+0077 A                  
+0078 A 803A 01           	NOP
+0079 A 803B 01           	NOP
+0080 A 803C 01           	NOP
+0081 A 803D 01           	NOP
+0082 A 803E 01           	NOP
+0083 A 803F 01           	NOP
+0084 A 8040 01           	NOP
+0085 A 8041 01           	NOP
+0086 A 8042 01           	NOP
+0087 A 8043 01           	NOP
+0088 A                  
+0089 A 8044 01           	NOP
+0090 A 8045 01           	NOP
+0091 A 8046 01           	NOP
+0092 A 8047 01           	NOP
+0093 A 8048 01           	NOP
+0094 A 8049 01           	NOP
+0095 A 804A 01           	NOP
+0096 A 804B 01           	NOP
+0097 A 804C 01           	NOP
+0098 A 804D 01           	NOP
+0099 A                  
+0100 A 804E 01           	NOP
+0101 A 804F 01           	NOP
+0102 A 8050 01           	NOP
+0103 A 8051 01           	NOP
+0104 A 8052 01           	NOP
+0105 A 8053 01           	NOP
+0106 A 8054 01           	NOP
+0107 A 8055 01           	NOP
+0108 A 8056 01           	NOP
+0109 A 8057 01           	NOP
+0110 A                  
+0111 A 8058 01           	NOP
+0112 A 8059 01           	NOP
+0113 A 805A 01           	NOP
+0114 A 805B 01           	NOP
+0115 A 805C 01           	NOP
+0116 A 805D 01           	NOP
+0117 A 805E 01           	NOP
+0118 A 805F 01           	NOP
+0119 A 8060 01           	NOP
+0120 A 8061 01           	NOP
+0121 A                  
+0122 A 8062 01           	NOP
+0123 A 8063 01           	NOP
+0124 A 8064 01           	NOP
+0125 A 8065 01           	NOP
+0126 A 8066 01           	NOP
+0127 A 8067 01           	NOP
+0128 A 8068 01           	NOP
+0129 A 8069 01           	NOP
+0130 A 806A 01           	NOP
+0131 A 806B 01           	NOP
+0132 A                  
+0133 A 806C 01           	NOP
+0134 A 806D 01           	NOP
+0135 A 806E 01           	NOP
+0136 A 806F 01           	NOP
+0137 A 8070 01           	NOP
+0138 A 8071 01           	NOP
+0139 A 8072 01           	NOP
+0140 A 8073 01           	NOP
+0141 A 8074 01           	NOP
+0142 A 8075 01           	NOP
+0143 A                  
+0144 A 8076 01           	NOP
+0145 A 8077 01           	NOP
+0146 A 8078 01           	NOP
+0147 A 8079 01           	NOP
+0148 A 807A 01           	NOP
+0149 A 807B 01           	NOP
+0150 A 807C 01           	NOP
+0151 A 807D 01           	NOP
+0152 A 807E 01           	NOP
+0153 A 807F 01           	NOP
+0154 A                  
+0155 A 8080 01           	NOP
+0156 A 8081 01           	NOP
+0157 A 8082 01           	NOP
+0158 A 8083 01           	NOP
+0159 A 8084 01           	NOP
+0160 A 8085 01           	NOP
+0161 A 8086 01           	NOP
+0162 A 8087 01           	NOP
+0163 A 8088 01           	NOP
+0164 A 8089 01           LOP	NOP
+0165 A                  
+0166 A                  ****NO HAY END PA' QUE SE MUERA ALV  ERROR 10
+0167 A                  
+0168 A                  
+0169 A                  
+0170 A                  ERROR 010	NO SE ENCUENTRA END
+0171 A 

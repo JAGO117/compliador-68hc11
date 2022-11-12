@@ -1,0 +1,25 @@
+Poio	EQU 	$3321
+asda	EQU	$1234
+	Org	$8000
+	ldaa 	$8830
+
+Loop	jsr 	$8830
+	bne	Loop
+	bne	opo
+	ldaa 	Poio
+opo
+	jsr	$1111
+*un comentario
+	*otro comentario
+		*comentario
+	jsr	Poio*este es un comentario
+	staa	$9000*ma
+Poli
+	ldx	$47AB
+	adca	$0011
+	clr	$0021
+	adca	#$0031
+	fcb	$F1,$10
+	aba
+	bcc 	Poli
+	END	$8000

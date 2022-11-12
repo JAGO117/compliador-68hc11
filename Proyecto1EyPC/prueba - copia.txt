@@ -1,0 +1,4 @@
+poio	EQU	$1234
+	aba	#poio
+	asl	#poio
+	yolo	#$3222

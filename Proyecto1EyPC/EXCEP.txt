@@ -1,0 +1,7 @@
+	ORG	$8000	*****HELP*****
+HELP
+	BRCLR 	$07,#$80	T2
+	BRSET	$00,Y,#$80	HELP 
+T2
+	BSET	$AB,X,#$50
+	BCLR	$FF,#$FD 	*comentario

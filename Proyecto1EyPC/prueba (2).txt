@@ -1,0 +1,26 @@
+0001 A      3321        Poio	EQU 	$3321
+0002 A      1234        asda	EQU	$1234
+0003 A                  	Org	$8000
+0004 A                  	ldaa 	$8830
+0005 A 8000 B68830          
+0006 A                  Loop	jsr 	$8830
+0007 A 8003 BD8830          	bne	Loop
+0008 A 8006 26FD          	bne	opo
+0009 A 8008 2605          	ldaa 	Poio
+0010 A 800A B63321          opo
+0011 A 800D             	jsr	$1111
+0012 A 800D BD1111          *un comentario
+0013 A                  	*otro comentario
+0014 A                  		*comentario
+0015 A                  	jsr	Poio*este es un comentario
+0016 A 8010 BD3321          	staa	$9000*ma
+0017 A 8013 B79000          Poli
+0018 A 8016             	ldx	$47AB
+0019 A 8016 FE47AB          	adca	$0011
+0020 A 8019 9911          	clr	$0021
+0021 A 801B 7F0021          	adca	#$0031
+0022 A 801E 8931          	fcb	$F1,$10
+0023 A 8020 F110         	aba
+0024 A 8022 1B           	bcc 	Poli
+0025 A 8023 24F3          	END	$8000
+0026 A 
